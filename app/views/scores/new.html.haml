@@ -1,0 +1,15 @@
+= form_for @score do |f|
+    %p 
+        = f.label :name, "Nama"
+        = f.text_field :name
+    %p 
+        = f.label :score_a, "A"
+        = f.text_field :score_a
+    %p 
+        = f.label :score_b, "B"
+        = f.text_field :score_b
+    %p 
+        = f.label :score_c, "C"
+        = f.text_field :score_c
+    %p
+        = f.submit "Hitung"

@@ -1,0 +1,21 @@
+%h3 SHOW
+
+%table 
+    %tbody
+        %tr 
+            %td Nama
+            %td= @score.name
+        %tr 
+            %td A
+            %td= @score.score_a
+        %tr 
+            %td B
+            %td= @score.score_b
+        %tr 
+            %td C
+            %td= @score.score_c
+        %tr 
+            %td Urutan
+            %td= @score.sorting
+
+= link_to "Kembali", scores_path

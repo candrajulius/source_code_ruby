@@ -1,0 +1,22 @@
+%h3 INDEX
+
+%table{border:1 }
+    %thead 
+        %tr 
+            %td{colspan: 5} Sorting
+        %tr 
+            %td Nama
+            %td A
+            %td B
+            %td C
+            %td Urutan
+    %tbody 
+        - @scores.each do |score|
+            %tr 
+                %td= link_to score.name, score_path(score)
+                %td= score.score_a
+                %td= score.score_b
+                %td= score.score_c
+                %td= score.sorting
+ 
+= link_to 'Tambah', new_score_path
